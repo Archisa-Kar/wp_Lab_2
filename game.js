@@ -43,6 +43,9 @@ function start() {
     // Add an event listener to the keypress event.
     document.addEventListener("keydown", moveBear, false);
     
+    // sets the speed of the bear to the value in the text field.
+    document.getElementById("speedBear").addEventListener("change", setSpeed)
+    
     lastStingTime = new Date();
 
     //create new array for bees
