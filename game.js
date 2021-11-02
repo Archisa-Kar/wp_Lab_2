@@ -45,8 +45,8 @@ function start() {
     
     // sets the speed of the bear to the value in the text field.
     document.getElementById("speedBear").addEventListener("change", setSpeed)
-    
-    lastStingTime = new Date();
+  
+     document.addEventListener("keydown", lastSTing, false);
 
     //create new array for bees
     bees = new Array();
@@ -57,6 +57,10 @@ function start() {
 
     updateTimer = clearTimeout();
   }
+
+function LastSting() {
+  lastStingTime = new Date();
+}
 
 
 function setSpeed() {
