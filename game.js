@@ -209,10 +209,6 @@ function addBees() {
     bees.push(bee); 
 }
 
-function removeAllBees() {
-    beesA
-}
-
 function updateBees() {
   // update loop for game
   //move the bees randomly
