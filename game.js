@@ -1,4 +1,29 @@
 
+function start() {
+
+   
+    //create bear
+    bear = new Bear();
+  
+    // Add an event listener to the keypress event.
+    document.addEventListener("keydown", moveBear, false);
+    
+    // sets the speed of the bear to the value in the text field.
+    document.getElementById("speedBear").addEventListener("change", setSpeed)
+  
+     document.addEventListener("keydown", lastSTing, false);
+
+    //create new array for bees
+    bees = new Array();
+    //create bees
+    makeBees();
+  
+    updateBees();
+
+    updateTimer = clearTimeout();
+  }
+
+
 function Bear() {
   this.dBear = 100;
   this.htmlElement = document.getElementById("bear");
@@ -33,30 +58,6 @@ function Bear() {
     if (this.y > h - ih) this.y = h - ih;
   };
 }
-
-function start() {
-
-   
-    //create bear
-    bear = new Bear();
-  
-    // Add an event listener to the keypress event.
-    document.addEventListener("keydown", moveBear, false);
-    
-    // sets the speed of the bear to the value in the text field.
-    document.getElementById("speedBear").addEventListener("change", setSpeed)
-  
-     document.addEventListener("keydown", lastSTing, false);
-
-    //create new array for bees
-    bees = new Array();
-    //create bees
-    makeBees();
-  
-    updateBees();
-
-    updateTimer = clearTimeout();
-  }
 
 function LastSting() {
   lastStingTime = new Date();
